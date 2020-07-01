@@ -5,7 +5,6 @@ const bot = new Discord.Client();
 bot.on('ready', () =>{
     console.log('The BOT is online!');
     bot.user.setActivity('his dad code', { type: 'WATCHING'});
-    bot.user.setStatus('dnd')
 })
 
 bot.on('guildMemberAdd', member =>{
