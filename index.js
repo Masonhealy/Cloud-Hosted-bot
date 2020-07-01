@@ -6,4 +6,4 @@ bot.on('ready', () =>{
     console.log('The BOT is online!');
 })
 
-bot.login(process.emv.token);
+bot.login(process.env.token);
