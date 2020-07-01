@@ -4,8 +4,8 @@ const bot = new Discord.Client();
 
 bot.on('ready', () =>{
     console.log('The BOT is online!');
-bot.user.setActivity('w8x0 code', { type: 'WATCHING'});
-bot.user.setStatus('idle')
+bot.user.setActivity('Fuck Pride!', { type: 'WATCHING'});
+bot.user.setStatus('online')
 })
 
 bot.login(process.env.token);
