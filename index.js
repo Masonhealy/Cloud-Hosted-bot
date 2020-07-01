@@ -4,9 +4,15 @@ const bot = new Discord.Client();
 
 bot.on('ready', () =>{
     console.log('The BOT is online!');
-bot.user.setActivity('Fuck Pride!', { type: 'WATCHING'});
-bot.user.setStatus('online')
 
 })
+
+bot.on('guildMemberAdd', member =>{
+
+    const channel = member.guild.channels.find(channel => channel.name === "welcome")
+    if (channel) return;
+
+    channel.send('Welcome to our server, ${member}, You better not be a gay fag or i will hunt you down lul ')
+});
 
 bot.login(process.env.token);
