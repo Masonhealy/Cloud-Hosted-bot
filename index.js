@@ -9,7 +9,7 @@ bot.on('ready', () =>{
 
 bot.on('guildMemberAdd', member =>{
 
-    const channel = member.guild.channels.cache.find(channel => channel.name === "welcome")
+    const channel = member.guild.channels.cache.find(channel => channel.name === "welcome");
     if (!channel) return;
 
     channel.send(`Welcome to our server, ${member}, You better not be a gay fag or I will hunt you down `)
